@@ -26,33 +26,33 @@ const PLATFORMS = [
 
 export default function Platforms() {
   return (
-    <section id="platforms" className="section-padding bg-[#0D0F0E]">
-      <div className="max-w-[1240px] mx-auto px-6">
-        {/* Header (Centered) */}
-        <div className="text-center mb-24 max-w-[800px] mx-auto">
-          <p className="text-[#006D3C] text-sm font-black uppercase tracking-widest mb-6">Supported Platforms</p>
-          <h2 className="text-4xl md:text-6xl font-extrabold font-heading text-white leading-tight mb-8">
-            Multi-platform <i className="italic font-heading">intelligence</i>.
+    <section id="platforms" className="section-padding bg-[#0D0F0E] border-t border-white/[0.03]">
+      <div className="max-w-[1240px] mx-auto px-10">
+        {/* Header - Left-Aligned */}
+        <div className="max-w-[620px] mb-24">
+          <p className="text-[11px] font-black uppercase tracking-[0.2em] text-[#006D3C] mb-6">Supported Platforms</p>
+          <h2 className="text-3xl md:text-5xl font-bold font-heading text-white leading-tight mb-8">
+            Multi-platform <i className="italic font-heading text-[#E5E7EB]">intelligence</i>.
           </h2>
-          <p className="text-[#9CA3AF] text-xl max-w-[680px] mx-auto leading-relaxed text-center">
-            Postra understands the nuances of each platform and tailors its analysis accordingly. No more guessing.
+          <p className="text-lg text-[#9CA3AF] opacity-80 leading-relaxed">
+            Postra understands the nuances of each network. No more guessing what to post.
           </p>
         </div>
 
-        {/* 4 Cards (Centered Internal Content) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* 4 Cards - Balanced Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {PLATFORMS.map((p, i) => {
             const Icon = p.icon;
             return (
-              <div key={i} className="pill-card p-10 group transition-all hover:bg-white/[0.04] hover:shadow-2xl hover:shadow-[#006D3C]/5 hover:-translate-y-2 text-center flex flex-col items-center">
-                <div className={`w-16 h-16 rounded-3xl bg-gradient-to-br ${p.bg} flex items-center justify-center mb-8 shadow-xl`}>
-                  <Icon className="w-8 h-8" style={{ color: p.color }} />
+              <div key={i} className="pill-card p-10 group transition-all hover:bg-white/[0.04] text-left">
+                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${p.bg} flex items-center justify-center mb-10 transition-transform group-hover:scale-105`}>
+                  <Icon className="w-6 h-6" style={{ color: p.color }} />
                 </div>
-                <h3 className="text-2xl font-bold font-heading text-white mb-8 group-hover:text-[#006D3C] transition-colors uppercase tracking-tight">{p.name}</h3>
-                <ul className="space-y-4 mb-10 w-full">
+                <h3 className="text-lg font-bold font-heading text-white mb-8 tracking-tight uppercase">{p.name}</h3>
+                <ul className="space-y-4 mb-2">
                   {p.features.map((f, j) => (
-                    <li key={j} className="flex items-center justify-center gap-3 text-base text-[#9CA3AF] leading-relaxed group-hover:text-[#E5E7EB]">
-                      <div className="w-2 h-2 rounded-full bg-[#006D3C] shrink-0 opacity-40 group-hover:opacity-100 transition-opacity" />
+                    <li key={j} className="flex items-start gap-3 text-sm text-[#9CA3AF] leading-snug group-hover:text-[#E5E7EB] transition-colors">
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#006D3C] mt-[6px] shrink-0 opacity-40 group-hover:opacity-100 transition-opacity" />
                       {f}
                     </li>
                   ))}

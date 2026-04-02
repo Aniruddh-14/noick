@@ -19,88 +19,106 @@ body {
   overflow-x: hidden;
 }
 
-/* ── Typography ── */
+/* ── Typography Hierarchy ── */
 h1, h2, h3, h4, .font-heading {
   font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: clamp(2.5rem, 5vw, 4.25rem); line-height: 1.1; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.25rem; }
+
+p, .font-body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #9CA3AF;
 }
 
 .manrope-italic {
   font-style: italic;
 }
 
-/* ── OriginZero Palette ── */
+/* ── Design System Tokens ── */
 :root {
   --origin-bg: #0D0F0E;
   --origin-emerald: #006D3C;
-  --origin-emerald-light: #008D4C;
-  --origin-text-secondary: #9CA3AF;
-  --origin-card-bg: rgba(255, 255, 255, 0.04);
-  --origin-card-border: rgba(255, 255, 255, 0.08);
+  --origin-card-bg: rgba(255, 255, 255, 0.02);
+  --origin-card-border: rgba(255, 255, 255, 0.05);
+  --origin-radius: 20px;
 }
 
-.text-origin-secondary { color: var(--origin-text-secondary); }
-.bg-origin-emerald { background-color: var(--origin-emerald); }
-.border-origin-emerald { border-color: var(--origin-emerald); }
-
-/* ── Components ── */
+/* ── Premium Components ── */
 .pill-button {
   border-radius: 9999px;
-  padding: 0.75rem 1.5rem;
+  padding: 0.625rem 1.25rem;
   font-weight: 600;
-  font-size: 0.875rem;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 0.8125rem;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.pill-button-primary {
+  background: var(--origin-emerald);
+  color: white;
+}
+.pill-button-primary:hover {
+  background: #008D4C;
+  transform: translateY(-1px);
+}
+
+.pill-button-ghost {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #E5E7EB;
+}
+.pill-button-ghost:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
 }
 
 .pill-card {
-  border-radius: 32px;
+  border-radius: var(--origin-radius);
   background: var(--origin-card-bg);
   border: 1px solid var(--origin-card-border);
-  backdrop-filter: blur(20px);
+  padding: 28px;
+  backdrop-filter: blur(10px);
 }
 
-.pill-input {
-  border-radius: 9999px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 0.75rem 1.5rem;
-  color: white;
-  transition: border-color 0.2s;
-}
-.pill-input:focus {
-  border-color: var(--origin-emerald);
-  outline: none;
-}
+/* ── Spacing Guidelines ── */
+.gap-h-s { margin-bottom: 24px; } /* headline -> subheadline */
+.gap-s-b { margin-bottom: 32px; } /* subheadline -> button */
+.gap-b-c { margin-bottom: 48px; } /* button -> cards/content */
 
-/* ── Spacing ── */
 .section-padding {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 /* ── Animations ── */
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
+  from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
 .fade-in {
-  animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .stagger-1 { animation-delay: 0.1s; }
 .stagger-2 { animation-delay: 0.2s; }
 .stagger-3 { animation-delay: 0.3s; }
 
-/* ── Effects ── */
-.glow-emerald {
-  box-shadow: 0 0 30px rgba(0, 109, 60, 0.2);
-}
-
-.bg-bg {
-  background-color: var(--origin-bg);
+/* ── Clean Effects ── */
+.bg-subtle-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(0, 109, 60, 0.03) 0%, transparent 70%);
 }
 
 .section-divider {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.03), transparent);
 }

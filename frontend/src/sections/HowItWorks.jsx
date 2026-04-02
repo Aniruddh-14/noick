@@ -5,50 +5,54 @@ const STEPS = [
     icon: Link2,
     title: "Connect your content",
     desc: "Enter your handle on Twitter, Instagram, LinkedIn, or YouTube. We pull your posts and start analyzing.",
-    bg: "bg-[#006D3C]/[0.08]",
-    iconColor: "text-[#006D3C]",
+    color: "#00C16A",
   },
   {
     icon: Cpu,
-    title: "Postra analyzes your patterns",
+    title: "Analyze your patterns",
     desc: "Our engine classifies your content by type, tone, hook, and format — then scores what actually drives engagement.",
-    bg: "bg-[#006D3C]/[0.08]",
-    iconColor: "text-[#006D3C]",
+    color: "#3B82F6",
   },
   {
     icon: Lightbulb,
     title: "Get personalized strategy",
-    desc: "Receive a report with evidence-backed insights and clear next steps tailored to your content style.",
-    bg: "bg-[#006D3C]/[0.08]",
-    iconColor: "text-[#006D3C]",
+    desc: "Receive a report with evidence-backed insights and clear next steps tailored to your personal content style.",
+    color: "#00C16A",
   },
 ];
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="section-padding bg-[#0D0F0E]">
-      <div className="max-w-[1240px] mx-auto px-6">
-        {/* Header (Centered) */}
-        <div className="text-center mb-24 max-w-[800px] mx-auto">
-          <p className="text-[#006D3C] text-sm font-black uppercase tracking-widest mb-6">The Process</p>
-          <h2 className="text-4xl md:text-6xl font-extrabold font-heading text-white leading-tight">
-            From raw data to a <i className="italic font-heading">winning strategy</i> in seconds.
+    <section id="how-it-works" className="section-padding bg-[#0D0F0E] border-t border-white/[0.03]">
+      <div className="max-w-[1240px] mx-auto px-10">
+        {/* Header - Left-Aligned */}
+        <div className="max-w-[620px] mb-24">
+          <p className="text-[11px] font-black uppercase tracking-[0.2em] text-[#006D3C] mb-6">The Process</p>
+          <h2 className="text-3xl md:text-5xl font-bold font-heading text-white leading-tight mb-8">
+            From raw data to a <i className="italic font-heading text-[#E5E7EB]">winning strategy</i> in seconds.
           </h2>
+          <p className="text-lg text-[#9CA3AF] opacity-80 leading-relaxed">
+            Stop guessing what to post. Use AI to understand your audience and optimize your content mix.
+          </p>
         </div>
 
-        {/* Cards (Centered Internal Content) */}
-        <div className="grid md:grid-cols-3 gap-10">
+        {/* Cards - Balanced Grid */}
+        <div className="grid md:grid-cols-3 gap-6">
           {STEPS.map((step, i) => {
             const Icon = step.icon;
             return (
-              <div key={i} className="pill-card p-12 text-center transition-all hover:border-[#006D3C]/40 hover:shadow-2xl hover:shadow-[#006D3C]/10 hover:-translate-y-2 bg-white/[0.01]">
-                <div className="flex justify-center mb-10">
-                  <div className={`w-20 h-20 rounded-3xl ${step.bg} flex items-center justify-center shadow-lg shadow-[#006D3C]/10`}>
-                    <Icon className={`w-10 h-10 ${step.iconColor}`} />
+              <div key={i} className="pill-card text-left transition-all hover:bg-white/[0.04]">
+                <div className="flex flex-col items-start gap-10 h-full">
+                  <div className="w-12 h-12 rounded-xl bg-white/[0.03] border border-white/[0.05] flex items-center justify-center">
+                    <Icon className="w-5 h-5" style={{ color: step.color }} />
+                  </div>
+                  <div>
+                    <h3 className="text-[18px] font-bold font-heading text-white mb-6 tracking-tight uppercase">{step.title}</h3>
+                    <p className="text-[15px] text-[#9CA3AF] leading-relaxed font-body">
+                      {step.desc}
+                    </p>
                   </div>
                 </div>
-                <h3 className="text-2xl font-bold font-heading text-white mb-6 uppercase tracking-tight">{step.title}</h3>
-                <p className="text-[#9CA3AF] text-lg leading-relaxed">{step.desc}</p>
               </div>
             );
           })}
