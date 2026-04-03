@@ -43,7 +43,7 @@ export default function SampleReport() {
         <div className="text-center mb-16">
           <p className="text-accent text-sm font-semibold tracking-wide uppercase mb-3">Sample Report</p>
           <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-4">
-            See what Postra reveals.
+            See what Postera reveals.
           </h2>
           <p className="text-text-secondary max-w-2xl mx-auto text-lg">
             This is a preview of a real strategy report. Every insight is backed by evidence from your own content.

@@ -12,7 +12,7 @@ export default function Hero() {
           {/* CONTENT (LEFT ALIGNED) */}
           <div className="max-w-[640px] text-left">
             <h1 className="fade-in font-heading text-4xl sm:text-5xl md:text-[3.5rem] font-bold leading-tight text-white mb-6 tracking-tight">
-              Postra learns how <i className="italic font-heading text-[#00C16A]">YOU</i> create and tells you what to do next.
+              Postera learns how <i className="italic font-heading text-[#00C16A]">YOU</i> create and tells you what to do next.
             </h1>
             
             <p className="fade-in stagger-1 text-lg text-[#9CA3AF] max-w-[520px] leading-relaxed mb-8 opacity-90">

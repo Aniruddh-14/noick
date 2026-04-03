@@ -28,13 +28,13 @@ export default function Landing({ onAnalyze, onSampleReport }) {
 
         {/* Headline */}
         <h1 className="fade-in stagger-1 text-4xl md:text-5xl lg:text-6xl font-black leading-[1.08] tracking-tight mb-6">
-          Postra learns how{' '}
+          Postera learns how{' '}
           <span className="gradient-text">YOU</span> create and tells you what to do next.
         </h1>
 
         {/* Subheadline */}
         <p className="fade-in stagger-2 text-lg md:text-xl text-text-secondary max-w-2xl mx-auto mb-12 leading-relaxed">
-          Analyze your content across Twitter, Instagram, LinkedIn, and YouTube. Postra finds your patterns, understands your style, and gives you personalized strategy to grow faster.
+          Analyze your content across Twitter, Instagram, LinkedIn, and YouTube. Postera finds your patterns, understands your style, and gives you personalized strategy to grow faster.
 
         </p>
 

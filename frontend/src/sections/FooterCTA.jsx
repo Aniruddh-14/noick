@@ -27,7 +27,7 @@ export default function FooterCTA() {
               <div className="w-8 h-8 rounded-lg bg-[#006D3C] flex items-center justify-center shadow-lg shadow-[#006D3C]/10">
                 <Activity className="w-4 h-4 text-white" />
               </div>
-              <span className="font-heading font-extrabold text-white tracking-widest text-lg uppercase">Postra</span>
+              <span className="font-heading font-extrabold text-white tracking-widest text-lg uppercase">Postera</span>
             </div>
             <p className="text-[#4B5563] text-[13px] font-medium leading-relaxed max-w-[280px]">
               The AI content strategy engine for professional creators and digital brands.
@@ -46,8 +46,8 @@ export default function FooterCTA() {
             <div className="space-y-6">
               <h4 className="text-[11px] font-black uppercase tracking-[0.2em] text-white/40">Connect</h4>
               <nav className="flex flex-col gap-4 text-[13px] font-medium text-[#9CA3AF]">
-                <a href="mailto:hello@postra.ai" className="hover:text-white transition-colors">Contact</a>
-                <a href="https://twitter.com/postra" className="hover:text-white transition-colors">Twitter / X</a>
+                <a href="mailto:hello@postera.ai" className="hover:text-white transition-colors">Contact</a>
+                <a href="https://twitter.com/postera" className="hover:text-white transition-colors">Twitter / X</a>
               </nav>
             </div>
           </div>

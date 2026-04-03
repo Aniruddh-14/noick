@@ -35,7 +35,7 @@ export default function Platforms() {
             Multi-platform <i className="italic font-heading text-[#E5E7EB]">intelligence</i>.
           </h2>
           <p className="text-lg text-[#9CA3AF] opacity-80 leading-relaxed">
-            Postra understands the nuances of each network. No more guessing what to post.
+            Postera understands the nuances of each network. No more guessing what to post.
           </p>
         </div>
 

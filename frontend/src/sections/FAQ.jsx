@@ -3,28 +3,28 @@ import { ChevronDown } from 'lucide-react';
 
 const QUESTIONS = [
   {
-    q: "What does Postra do?",
-    a: "Postra is an AI-powered content strategist. It analyzes your existing content across multiple platforms to identify what's working, what's hurting your growth, and gives you specific, personalized recommendations for what to do next. It's not a content generator — it's a strategy engine.",
+    q: "What does Postera do?",
+    a: "Postera is an AI-powered content strategist. It analyzes your existing content across multiple platforms to identify what's working, what's hurting your growth, and gives you specific, personalized recommendations for what to do next. It's not a content generator — it's a strategy engine.",
   },
   {
-    q: "Which platforms does Postra support?",
-    a: "Postra currently supports Twitter/X, Instagram, LinkedIn, and YouTube. Each platform gets a tailored analysis — from tweet hooks and thread patterns on Twitter to video title clustering and transcript analysis on YouTube.",
+    q: "Which platforms does Postera support?",
+    a: "Postera currently supports Twitter/X, Instagram, LinkedIn, and YouTube. Each platform gets a tailored analysis — from tweet hooks and thread patterns on Twitter to video title clustering and transcript analysis on YouTube.",
   },
   {
     q: "Can it work with fewer than 30 posts?",
-    a: "Yes. If you have 30+ posts, Postra runs a full high-confidence analysis. With 10-29 posts, you'll get early pattern detection with a note about improving accuracy with more data. Even with fewer than 10 posts, Postra generates an early signal report — it never blocks you.",
+    a: "Yes. If you have 30+ posts, Postera runs a full high-confidence analysis. With 10-29 posts, you'll get early pattern detection with a note about improving accuracy with more data. Even with fewer than 10 posts, Postera generates an early signal report — it never blocks you.",
   },
   {
     q: "Does it generate content for me?",
-    a: "No. Postra is deliberately NOT a content generator. It analyzes your content and gives you strategic direction — what types of posts to make more of, which hooks to use, and what to stop doing. The creativity stays with you.",
+    a: "No. Postera is deliberately NOT a content generator. It analyzes your content and gives you strategic direction — what types of posts to make more of, which hooks to use, and what to stop doing. The creativity stays with you.",
   },
   {
     q: "Is the analysis personalized?",
-    a: "100%. Every insight is based on YOUR content, YOUR patterns, and YOUR engagement data. Postra doesn't give generic advice like 'post consistently.' It tells you things like 'your story posts perform 3.2x better, but you only post them 13% of the time — increase that.'",
+    a: "100%. Every insight is based on YOUR content, YOUR patterns, and YOUR engagement data. Postera doesn't give generic advice like 'post consistently.' It tells you things like 'your story posts perform 3.2x better, but you only post them 13% of the time — increase that.'",
   },
   {
     q: "How is this different from analytics dashboards?",
-    a: "Analytics tools show you numbers. Postra tells you what to do with them. It connects patterns across your content types, hooks, tones, and formats to produce strategic recommendations, not just charts.",
+    a: "Analytics tools show you numbers. Postera tells you what to do with them. It connects patterns across your content types, hooks, tones, and formats to produce strategic recommendations, not just charts.",
   },
 ];
 

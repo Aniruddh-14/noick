@@ -125,7 +125,7 @@ export default function Report({ data, onReset }) {
       {/* ── Footer ── */}
       <div className="text-center pt-8 border-t border-border">
         <p className="text-text-muted text-sm">
-          Powered by <span className="gradient-text font-semibold">Postra</span> · AI Content Strategy Engine
+          Powered by <span className="gradient-text font-semibold">Postera</span> · AI Content Strategy Engine
         </p>
       </div>
     </div>

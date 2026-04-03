@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { ChevronDown, Sparkles, Activity, Target } from 'lucide-react';
 
 const FAQ_ITEMS = [
-  { q: "What does Postra do?", a: "Postra is an AI-powered content strategist. It analyzes your existing content to identify what's working, what's hurting your growth, and gives you specific, personalized next steps." },
-  { q: "Which platforms does Postra support?", a: "Twitter/X, Instagram, LinkedIn, and YouTube, each with platform-specific, tailored analysis." },
-  { q: "Does it generate content for me?", a: "No. Postra gives you strategic direction — what types of posts to make, which hooks to use, what to reduce. The creativity is yours." },
+  { q: "What does Postera do?", a: "Postera is an AI-powered content strategist. It analyzes your existing content to identify what's working, what's hurting your growth, and gives you specific, personalized next steps." },
+  { q: "Which platforms does Postera support?", a: "Twitter/X, Instagram, LinkedIn, and YouTube, each with platform-specific, tailored analysis." },
+  { q: "Does it generate content for me?", a: "No. Postera gives you strategic direction — what types of posts to make, which hooks to use, what to reduce. The creativity is yours." },
 ];
 
 export default function StrategySection() {
